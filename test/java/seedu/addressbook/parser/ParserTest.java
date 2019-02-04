@@ -268,6 +268,10 @@ public class ParserTest {
         assertEquals(result.getPerson(), testPerson);
     }
 
+    /**
+     * Returns a generated test person for testing purposes.
+     * @return A generated test person for testing purposes.
+     */
     private static Person generateTestPerson() {
         try {
             return new Person(
@@ -282,6 +286,11 @@ public class ParserTest {
         }
     }
 
+    /**
+     * Returns add command string after conversion.
+     * @param person The input person to be converted to add command string.
+     * @return add command string after conversion.
+     */
     private static String convertPersonToAddCommandString(ReadOnlyPerson person) {
         String addCommand = "add "
                 + person.getName().fullName
